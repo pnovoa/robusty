@@ -6,13 +6,8 @@
  * user guide available at https://docs.gradle.org/4.8.1/userguide/tutorial_java_projects.html
  */
 
-plugins {
-    // Apply the java plugin to add support for Java
-    id 'java'
-
-    // Apply the application plugin to add support for building an application
-    id 'application'
-}
+apply plugin: 'java'
+apply plugin: 'application'
 
 // Define the main class for the application
 mainClassName = 'App'
