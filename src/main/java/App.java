@@ -8,6 +8,18 @@ public class App {
 
     public static void main(String[] args) {
 
-      System.out.println(new App().getGreeting());
+      SimpleRegression simpleRegression = new SimpleRegression(true);
+      simpleRegression.addData(new double[][] {
+                {1, 2},
+                {2, 3},
+                {3, 4},
+                {4, 5},
+                {5, 6}
+        });
+
+        System.out.println("slope = " + simpleRegression.getSlope());
+        System.out.println("intercept = " + simpleRegression.getIntercept());
+        System.out.println("prediction for 1.5 = " + simpleRegression.predict(1.5));
+
     }
 }
