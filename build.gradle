@@ -9,8 +9,19 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+
 // Define the main class for the application
 mainClassName = 'App'
+version=1.0
+
+jar {
+    manifest {
+        attributes "Implementation-Title": project.name,
+            "Implementation-Version": version,
+            "Main-Class": mainClassName
+    }
+}
+
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
@@ -20,6 +31,14 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile "org.apache.commons:commons-math3:3.6.1"
+
+    compile "com.github.haifengl:smile-core:1.5.1"
+
+    compile "com.github.haifengl:smile-math:1.5.1"
+
+    compile "com.github.haifengl:smile-data:1.5.1"
+
+    compile "com.github.haifengl:smile-interpolation:1.5.1"
 }
 
 // In this section you declare where to find the dependencies of your project
