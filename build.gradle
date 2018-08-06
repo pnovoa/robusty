@@ -39,6 +39,8 @@ dependencies {
     compile "com.github.haifengl:smile-data:1.5.1"
 
     compile "com.github.haifengl:smile-interpolation:1.5.1"
+
+    compile "commons-cli:commons-cli:1.4"
 }
 
 // In this section you declare where to find the dependencies of your project

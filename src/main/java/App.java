@@ -8,6 +8,8 @@ public class App {
 
     public static void main(String[] args) {
 
+
+
       SimpleRegression simpleRegression = new SimpleRegression(true);
       simpleRegression.addData(new double[][] {
                 {1, 2},
