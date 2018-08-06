@@ -1,14 +1,19 @@
 
 import org.apache.commons.math3.stat.regression.*;
 
+
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
+
 public class App {
     public String getGreeting() {
         return "Hello world!";
     }
 
-    public static void main(String[] args) {
-
-
+    public static void main(String[] args) throws ParseException{
 
       SimpleRegression simpleRegression = new SimpleRegression(true);
       simpleRegression.addData(new double[][] {
