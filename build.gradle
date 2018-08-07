@@ -11,7 +11,7 @@ apply plugin: 'application'
 
 
 // Define the main class for the application
-mainClassName = 'App'
+mainClassName = 'com.pavelnh.robusty.Main'
 version=1.0
 
 jar {
@@ -20,6 +20,10 @@ jar {
             "Implementation-Version": version,
             "Main-Class": mainClassName
     }
+}
+
+run {
+    args = ["-a 'PSO', 1"]
 }
 
 
