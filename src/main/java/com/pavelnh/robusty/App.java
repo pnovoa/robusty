@@ -1,19 +1,28 @@
 
 import org.apache.commons.math3.stat.regression.*;
 
-
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.DefaultParser;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
+import org.apache.commons.cli.*;
 
 public class App {
-    public String getGreeting() {
-        return "Hello world!";
+
+    public static Options CLIDefinition(){
+
+
+    }
+
+    public static void CLIParsing(){
+
+    }
+
+    public static void CLIInterpretation(){
+
     }
 
     public static void main(String[] args) throws ParseException{
+
+      final Option optA = Option.builder("a").required().hasArg().desc("My first arg").build();
+      final Options options = new Options();
+      options.addOption(optA);
 
       SimpleRegression simpleRegression = new SimpleRegression(true);
       simpleRegression.addData(new double[][] {
