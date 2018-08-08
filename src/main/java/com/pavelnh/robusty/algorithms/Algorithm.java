@@ -1,10 +1,11 @@
 package com.pavelnh.robusty.algorithms;
 
-public interface Algorithm{
+import com.pavelnh.robusty.Configurable;
+
+public interface Algorithm extends Configurable{
 
   public void init();
 
   public void iterate();
-
 
 }
