@@ -7,11 +7,12 @@ public class OptionsReader{
 
   private CommandLine cmdLine;
 
-  public OptionsReader(String args[]){
 
+
+  public OptionsReader(String args[]){
     Option optAlgorithm = Option.builder("a").required().desc("Algorithm options").hasArgs().longOpt("algorithm").valueSeparator(',').build();
     Options options = new Options();
-    options.addOption(optAlgorithm);
+    options.addOption(optAlgorithm); 
 
     CommandLineParser parser = new DefaultParser();
     CommandLine cmdLine;

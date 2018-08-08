@@ -23,7 +23,7 @@ jar {
 }
 
 run {
-    args = ["-a 'PSO', 1"]
+    args = ["-a PSOReinit, 1"]
 }
 
 
